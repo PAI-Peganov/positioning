@@ -1,5 +1,6 @@
 const btnClk = document.getElementById("ModalOpenBtn");
 btnClk.addEventListener("click", () => {
+    startLoading();
     const bluer = document.getElementById("blur");
     bluer.style.display = "block";
 })
@@ -16,7 +17,7 @@ document.querySelector('.logo5 .block3').style.backgroundColor = 'deepskyblue';
 document.querySelector('.logo5 .block4').style.backgroundColor = 'yellow';
 
 
-document.addEventListener("DOMContentLoaded", () => {
+function startLoading() {
     const fill = document.getElementById("fill");
     const whiteText = document.getElementById("whiteText");
     const duration = 3000;
@@ -40,4 +41,4 @@ document.addEventListener("DOMContentLoaded", () => {
             clearInterval(interval);
         }
     }, intervalTime);
-});
+}
