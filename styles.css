@@ -1,0 +1,34 @@
+.logo4 {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.logo4 .outer-circle {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    background-color: crimson;
+    border-radius: 50%;
+    align-items: center;
+}
+
+.logo4 .inner-white-part {
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    width: 70px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    align-items: center;
+}
+
+.logo4 .center-circle {
+    height: 40px;
+    width: 40px;
+    background-color: crimson;
+    border-radius: 50%;
+    align-items: center;
+}
+
