@@ -1,3 +1,14 @@
+const btnClk = document.getElementById("ModalOpenBtn");
+btnClk.addEventListener("click", () => {
+    const bluer = document.getElementById("blur");
+    bluer.style.display = "block";
+})
+
+const btnCross = document.getElementById("modal1_cross");
+btnCross.addEventListener("click", () => {
+    const bluer = document.getElementById("blur");
+    bluer.style.display = "none";
+})
 const blocks = document.querySelectorAll('.logo5 .block');
 document.querySelector('.logo5 .block1').style.backgroundColor = 'red';
 document.querySelector('.logo5 .block2').style.backgroundColor = 'greenyellow';
