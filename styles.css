@@ -2,6 +2,9 @@
     display: flex;
     justify-content: center;
     box-sizing: border-box;
+    position: absolute;
+    top: 50px;
+    right: 150px;
 }
 
 .logo4 .outer-circle {
@@ -69,4 +72,75 @@
     min-height: 100vh;
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(10px);
+}
+.logo5 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
+    width: 100px;
+    position: absolute;
+    top: 50px;
+    left: 150px;
+}
+
+.logo5 .block1,
+.logo5 .block2,
+.logo5 .block3,
+.logo5 .block4 {
+    height: 48px;
+}
+
+.progress-container {
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+}
+
+.progress-bar {
+    background: #f0f0f0;
+    height: 24px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-fill {
+    background: red;
+    width: 40%;
+    height: 100%;
+}
+
+.progress-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.progress-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.progress-label-black {
+    color: black;
+    z-index: 1;
+}
+
+.progress-label-white {
+    color: white;
+    z-index: 2;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 40%;
+    text-align: center;
 }
