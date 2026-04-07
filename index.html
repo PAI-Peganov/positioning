@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+<!-- Логотипы (не изменены) -->
 <div class="logo4">
     <div class="outer-circle">
         <div class="inner-white-part">
@@ -20,16 +22,45 @@
     <div class="block4"></div>
 </div>
 
+<!-- Модальное окно с контентом -->
+<div class="modal">
+    <div class="modal-content-wrapper">
+        <!-- Прогресс-бар -->
+        <div class="progress-bar">
+            <div class="progress-fill" id="fill"></div>
+            <div class="progress-text">
+                <div class="text-black">Loading...</div>
+                <div class="text-white" id="whiteText">Loading...</div>
+            </div>
+        </div>
 
-<div class="progress-container">
-    <div class="progress-bar">
-        <div class="progress-fill"></div>
-        <div class="progress-text">
-            <div class="progress-label progress-label-black">Loading...</div>
-            <div class="progress-label progress-label-white">Loading...</div>
+        <!-- Аккордеон -->
+        <div class="accordion">
+            <div class="accordion-item">
+                <input type="radio" name="accordion-radio" id="item-1" class="accordion-input">
+                <label for="item-1" class="accordion-header">Раздел 1</label>
+                <div class="accordion-content">
+                    <p>Содержимое первого раскрывающегося блока. Здесь может быть любой текст, который должен появляться при клике.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <input type="radio" name="accordion-radio" id="item-2" class="accordion-input">
+                <label for="item-2" class="accordion-header">Раздел 2</label>
+                <div class="accordion-content">
+                    <p>Текст для второго раздела. CSS-свойство :checked позволяет отслеживать выбор этого элемента и применять стили к соседним элементам.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <input type="radio" name="accordion-radio" id="item-3" class="accordion-input">
+                <label for="item-3" class="accordion-header">Раздел 3</label>
+                <div class="accordion-content">
+                    <p>Третий блок с контентом. Использование radio-кнопок с одинаковым именем позволяет открывать только один блок за раз.</p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
+
 <script src="index.js"></script>
 </body>
 </html>
